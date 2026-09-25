@@ -1,0 +1,142 @@
+/* Variables de colores basados en el caso oficial */
+:root {
+    --color-fondo: #FFF5E1; /* Crema Pastel */
+    --color-rosa: #FFC0CB;  /* Rosa Suave */
+    --color-chocolate: #8B4513; /* Chocolate */
+    --color-texto-principal: #5D4037; /* Marrón Oscuro */
+    --color-texto-sec: #B0BEC5; /* Gris Claro */
+}
+
+/* Estilos Generales */
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto-principal);
+    font-family: 'Lato', sans-serif; /* Tipografía para texto general */
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Pacifico', cursive; /* Tipografía para títulos */
+    color: var(--color-chocolate);
+}
+
+/* Cabecera y Menú */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--color-texto-principal);
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--color-chocolate);
+}
+
+/* Enlaces del carrito y login */
+.carrito-acceso a {
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 0.9em;
+    color: var(--color-texto-principal); /* Esto quita el azul por defecto */
+    font-weight: bold; /* Lo hace negrita para que combine con el menú */
+}
+
+/* Efecto al pasar el mouse por encima (igual que en "productos") */
+.carrito-acceso a:hover {
+    color: var(--color-chocolate); 
+}
+
+.btn-registro {
+    color: var(--color-chocolate);
+    font-weight: bold;
+}
+
+/* Banner Principal */
+.banner {
+    display: flex;
+    padding: 50px;
+    align-items: center;
+    gap: 40px;
+}
+
+.banner-texto {
+    flex: 1;
+}
+
+.banner-texto p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.btn-principal {
+    background-color: var(--color-rosa);
+    color: var(--color-texto-principal);
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid var(--color-chocolate);
+}
+
+.banner-imagen {
+    flex: 1;
+}
+
+.placeholder-img {
+    width: 100%;
+    height: 300px;
+    background-color: var(--color-texto-sec);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* Grilla de Productos */
+.productos-destacados {
+    display: flex;
+    gap: 20px;
+    padding: 0 50px 50px 50px;
+}
+
+.producto-card {
+    background: white;
+    border: 1px solid var(--color-texto-sec);
+    padding: 15px;
+    text-align: center;
+    flex: 1;
+    border-radius: 8px;
+}
+
+.img-producto {
+    height: 150px;
+    background-color: #eee;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+}
+
+.precio {
+    font-weight: bold;
+    color: var(--color-chocolate);
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--color-chocolate);
+    color: white;
+}
