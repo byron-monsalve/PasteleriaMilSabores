@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastelería Mil Sabores - Inicio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="icon" type="image/svg+xml" href="./img/logo_web_2.png">
+</head>
+<body>
+
+
+    <header>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="productos.html">Productos</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="blogs.html">Blogs</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+
+        <div class="logo">
+        <a href="index.html">
+        <img src="./img/Logo_pasteleria_mil_sabores.png" class="logo-img" >
+        </a>
+        <h1></h1>
+
+        </div>
+        <div class="carrito-acceso">
+            <a href="carrito.html">🛒 Carrito (0)</a>
+            <a href="login.html" class="btn-login">Iniciar sesión</a>
+            <a href="registro.html" class="btn-registro">Registrar usuario</a>
+        </div>
+    </header>
+
+    <main>
+
+    <section class="productos">
+
+        <div class="productos-encabezado">
+            <h2>Productos</h2>
+            <p>Descubre nuestras deliciosas opciones de repostería</p>
+        </div>
+
+        <!--
+        <div class="filtros">
+            <button class="filtro-activo">Todos</button>
+            <button>Tortas</button>
+            <button>Postres</button>
+            <button>Sin azúcar</button>
+            <button>Sin gluten</button>
+            <button>Veganos</button>
+        </div>
+-->
+        <div class="productos-grid">
+
+            <!-- Producto 1 -->
+            <article class="producto-card">
+                <div class="producto-imagen">
+                    <img src="./img/torta_cuadrada_chocolate.jpg" alt="Torta Cuadrada de Chocolate">
+                </div>
+                <div class="producto-info">
+                    <span class="producto-categoria">Tortas Cuadradas</span>
+                    <h3>Torta Cuadrada de Chocolate</h3>
+                    <p class="producto-precio">$45.000 CLP</p>
+                    <div class="producto-acciones">
+                        <a href="detalle-producto.html" class="btn-detalle">Ver detalle</a>
+                        <button class="btn-carrito">Agregar</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Producto 2 -->
+            <article class="producto-card">
+                <div class="producto-imagen">
+                    <img src="./img/torta_cuadrada_fruta.jpg" alt="Torta Cuadrada de Frutas">
+                </div>
+                <div class="producto-info">
+                    <span class="producto-categoria">Tortas Cuadradas</span>
+                    <h3>Torta Cuadrada de Frutas</h3>
+                    <p class="producto-precio">$50.000 CLP</p>
+                    <div class="producto-acciones">
+                        <a href="detalle-producto.html" class="btn-detalle">Ver detalle</a>
+                        <button class="btn-carrito">Agregar</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Producto 3 -->
+            <article class="producto-card">
+                <div class="producto-imagen">
+                    <img src="./img/redonda_vainilla.png" alt="Torta Circular de Vainilla">
+                </div>
+                <div class="producto-info">
+                    <span class="producto-categoria">Tortas Circulares</span>
+                    <h3>Torta Circular de Vainilla</h3>
+                    <p class="producto-precio">$40.000 CLP</p>
+                    <div class="producto-acciones">
+                        <a href="detalle-producto.html" class="btn-detalle">Ver detalle</a>
+                        <button class="btn-carrito">Agregar</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Producto 4 -->
+            <article class="producto-card">
+                <div class="producto-imagen">
+                    <img src="./img/torta_redonda_manjar.jpg" alt="Torta Circular de Manjar">
+                </div>
+                <div class="producto-info">
+                    <span class="producto-categoria">Tortas Circulares</span>
+                    <h3>Torta Circular de Manjar</h3>
+                    <p class="producto-precio">$42.000 CLP</p>
+                    <div class="producto-acciones">
+                        <a href="detalle-producto.html" class="btn-detalle">Ver detalle</a>
+                        <button class="btn-carrito">Agregar</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Producto 5 -->
+            <article class="producto-card">
+                <div class="producto-imagen">
+                    <img src="./img/mouse_chocolate.png" alt="Mousse de Chocolate">
+                </div>
+                <div class="producto-info">
+                    <span class="producto-categoria">Postres Individuales</span>
+                    <h3>Mousse de Chocolate</h3>
+                    <p class="producto-precio">$5.000 CLP</p>
+                    <div class="producto-acciones">
+                        <a href="detalle-producto.html" class="btn-detalle">Ver detalle</a>
+                        <button class="btn-carrito">Agregar</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Producto 6 -->
+            <article class="producto-card">
+                <div class="producto-imagen">
+                    <img src="./img/tiramisu.png" alt="Tiramisú Clásico">
+                </div>
+                <div class="producto-info">
+                    <span class="producto-categoria">Postres Individuales</span>
+                    <h3>Tiramisú Clásico</h3>
+                    <p class="producto-precio">$5.500 CLP</p>
+                    <div class="producto-acciones">
+                        <a href="detalle-producto.html" class="btn-detalle">Ver detalle</a>
+                        <button class="btn-carrito">Agregar</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Producto 7 -->
+            <article class="producto-card">
+                <div class="producto-imagen">
+                    <img src="./img/panqueque_naranja.jpg" alt="Torta Sin Azúcar de Naranja">
+                </div>
+                <div class="producto-info">
+                    <span class="producto-categoria">Sin Azúcar</span>
+                    <h3>Torta Sin Azúcar de Naranja</h3>
+                    <p class="producto-precio">$48.000 CLP</p>
+                    <div class="producto-acciones">
+                        <a href="detalle-producto.html" class="btn-detalle">Ver detalle</a>
+                        <button class="btn-carrito">Agregar</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Producto 8 -->
+            <article class="producto-card">
+                <div class="producto-imagen">
+                    <img src="./img/cheescake.jpg" alt="Cheesecake Sin Azúcar">
+                </div>
+                <div class="producto-info">
+                    <span class="producto-categoria">Sin Azúcar</span>
+                    <h3>Cheesecake Sin Azúcar</h3>
+                    <p class="producto-precio">$47.000 CLP</p>
+                    <div class="producto-acciones">
+                        <a href="detalle-producto.html" class="btn-detalle">Ver detalle</a>
+                        <button class="btn-carrito">Agregar</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Producto 9 -->
+            <article class="producto-card">
+                <div class="producto-imagen">
+                    <img src="./img/empanda_manzana.png" alt="Empanada de Manzana">
+                </div>
+                <div class="producto-info">
+                    <span class="producto-categoria">Pastelería Tradicional</span>
+                    <h3>Empanada de Manzana</h3>
+                    <p class="producto-precio">$3.000 CLP</p>
+                    <div class="producto-acciones">
+                        <a href="detalle-producto.html" class="btn-detalle">Ver detalle</a>
+                        <button class="btn-carrito">Agregar</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Producto 10 -->
+            <article class="producto-card">
+                <div class="producto-imagen">
+                    <img src="./img/torta_santiago.jpg" alt="Tarta de Santiago">
+                </div>
+                <div class="producto-info">
+                    <span class="producto-categoria">Pastelería Tradicional</span>
+                    <h3>Tarta de Santiago</h3>
+                    <p class="producto-precio">$6.000 CLP</p>
+                    <div class="producto-acciones">
+                        <a href="detalle-producto.html" class="btn-detalle">Ver detalle</a>
+                        <button class="btn-carrito">Agregar</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Producto 11 -->
+            <article class="producto-card">
+                <div class="producto-imagen">
+                    <img src="./img/brownie.jpg" alt="Brownie Sin Gluten">
+                </div>
+                <div class="producto-info">
+                    <span class="producto-categoria">Sin Gluten</span>
+                    <h3>Brownie Sin Gluten</h3>
+                    <p class="producto-precio">$4.000 CLP</p>
+                    <div class="producto-acciones">
+                        <a href="detalle-producto.html" class="btn-detalle">Ver detalle</a>
+                        <button class="btn-carrito">Agregar</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Producto 12 -->
+            <article class="producto-card">
+                <div class="producto-imagen">
+                    <img src="./img/pan_sin_gluten.jpg" alt="Pan Sin Gluten">
+                </div>
+                <div class="producto-info">
+                    <span class="producto-categoria">Sin Gluten</span>
+                    <h3>Pan Sin Gluten</h3>
+                    <p class="producto-precio">$3.500 CLP</p>
+                    <div class="producto-acciones">
+                        <a href="detalle-producto.html" class="btn-detalle">Ver detalle</a>
+                        <button class="btn-carrito">Agregar</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Producto 13 -->
+            <article class="producto-card">
+                <div class="producto-imagen">
+                    <img src="./img/torta_vegana_chocolate.jpg" alt="Torta Vegana de Chocolate">
+                </div>
+                <div class="producto-info">
+                    <span class="producto-categoria">Productos Veganos</span>
+                    <h3>Torta Vegana de Chocolate</h3>
+                    <p class="producto-precio">$50.000 CLP</p>
+                    <div class="producto-acciones">
+                        <a href="detalle-producto.html" class="btn-detalle">Ver detalle</a>
+                        <button class="btn-carrito">Agregar</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Producto 14 -->
+            <article class="producto-card">
+                <div class="producto-imagen">
+                    <img src="./img/galleta_avena.jpg" alt="Galletas Veganas de Avena">
+                </div>
+                <div class="producto-info">
+                    <span class="producto-categoria">Productos Veganos</span>
+                    <h3>Galletas Veganas de Avena</h3>
+                    <p class="producto-precio">$4.500 CLP</p>
+                    <div class="producto-acciones">
+                        <a href="detalle-producto.html" class="btn-detalle">Ver detalle</a>
+                        <button class="btn-carrito">Agregar</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Producto 15 -->
+            <article class="producto-card">
+                <div class="producto-imagen">
+                    <img src="./img/torta_especial.jpg" alt="Torta Especial de Cumpleaños">
+                </div>
+                <div class="producto-info">
+                    <span class="producto-categoria">Tortas Especiales</span>
+                    <h3>Torta Especial de Cumpleaños</h3>
+                    <p class="producto-precio">$55.000 CLP</p>
+                    <div class="producto-acciones">
+                        <a href="detalle-producto.html" class="btn-detalle">Ver detalle</a>
+                        <button class="btn-carrito">Agregar</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Producto 16 -->
+            <article class="producto-card">
+                <div class="producto-imagen">
+                    <img src="./img/torta_matrimonio.jpg" alt="Torta Especial de Boda">
+                </div>
+                <div class="producto-info">
+                    <span class="producto-categoria">Tortas Especiales</span>
+                    <h3>Torta Especial de Boda</h3>
+                    <p class="producto-precio">$60.000 CLP</p>
+                    <div class="producto-acciones">
+                        <a href="detalle-producto.html" class="btn-detalle">Ver detalle</a>
+                        <button class="btn-carrito">Agregar</button>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+    </section>
+
+    </main>
+
+
+    <footer>
+        <p>&copy; 2026 Pastelería Mil Sabores. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
