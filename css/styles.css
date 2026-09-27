@@ -176,6 +176,173 @@ footer {
 }
 
 
+.titulo-destacados {
+    text-align: center; 
+    padding: 0 20px; 
+    margin: 40px auto 30px auto; 
+    max-width: 800px; 
+}
+
+/* Aquí parte style del blogs */
+.grid-blogs {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.blog-card {
+    background-color: #fff;
+    width: 320px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    border: 1px solid #FFC0CB;
+    display: flex;
+    flex-direction: column;
+}
+
+.img-blog {
+    width: 100%;
+    height: 200px;
+    background-color: #eee;
+    overflow: hidden;
+}
+
+.img-blog img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contenido-blog {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.categoria-blog {
+    font-size: 0.8em;
+    color: #FFF5E1;
+    background-color: #8B4513;
+    padding: 4px 10px;
+    border-radius: 20px;
+    align-self: flex-start;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.contenido-blog h3 {
+    font-family: 'Lato', sans-serif;
+    color: #5D4037;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+}
+
+.contenido-blog .autor {
+    font-size: 0.85em;
+    color: #B0BEC5;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.contenido-blog p {
+    color: #5D4037;
+    margin-bottom: 20px;
+    font-size: 0.95em;
+    line-height: 1.5;
+    flex-grow: 1;
+}
+
+.btn-leer {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #FFC0CB;
+    color: #8B4513;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-leer:hover {
+    background-color: #8B4513;
+    color: #FFF5E1;
+}
+
+/* Aquí parte style del artículo completo (Recetas) */
+.contenedor-articulo {
+    padding: 0 20px 40px 20px;
+    max-width: 900px; /* Más ancho para que el texto sea cómodo de leer */
+    margin: 0 auto;
+}
+
+.articulo-completo {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    border: 1px solid #FFC0CB;
+}
+
+.img-articulo {
+    width: 100%;
+    height: 400px; /* Imagen más alta para destacar */
+    background-color: #eee;
+    overflow: hidden;
+}
+
+.img-articulo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contenido-articulo {
+    padding: 40px;
+    color: #5D4037;
+}
+
+.contenido-articulo h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 2.2em; /* Título más grande */
+    margin: 15px 0;
+    color: #5D4037;
+}
+
+.contenido-articulo h4 {
+    font-size: 1.4em;
+    margin: 30px 0 15px 0;
+    color: #8B4513; /* Color chocolate del manual de marca */
+}
+
+.contenido-articulo ul {
+    margin-left: 20px;
+    margin-bottom: 25px;
+    line-height: 1.8;
+}
+
+.contenido-articulo p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-size: 1.05em;
+}
+
+.ingredientes-grid {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.ingredientes-columna {
+    flex: 1;
+    min-width: 250px;
 
 
 
