@@ -92,14 +92,23 @@ nav a:hover {
     flex: 1;
 }
 
+
 .placeholder-img {
-    width: 100%;
-    height: 300px;
-    background-color: var(--color-texto-sec);
+    width: 90%;
+    min-height: 200px; /* Le da una altura base al banner */
+    background-color: #eee;
     display: flex;
-    justify-content: center;
     align-items: center;
-    color: white;
+    justify-content: center;
+    overflow: hidden; 
+    border-radius: 20px; 
+}
+
+
+.placeholder-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
 }
 
 /* Grilla de Productos */
@@ -126,6 +135,15 @@ nav a:hover {
     align-items: center;
     justify-content: center;
     color: #999;
+    overflow: hidden; /* Evita que la imagen sobresalga del contenedor */
+    border-radius: 4px; /* Opcional: le da un toque redondeado a la foto */
+}
+
+/* Nueva regla: Controla el tamaño de la imagen exacta dentro del cuadro */
+.img-producto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la foto perfectamente sin deformarla */
 }
 
 .precio {
@@ -139,4 +157,18 @@ footer {
     padding: 20px;
     background-color: var(--color-chocolate);
     color: white;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+}
+
+
+.logo-img {
+    width: auto; 
+    height: 130px;
+    border-radius: 50%;
 }
