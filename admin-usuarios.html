@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <title>Pastelería Mil Sabores - Usuarios</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pacifico&display=swap"
+        rel="stylesheet"
+    >
+    <link rel="stylesheet" href="css/styles_admin.css">
+    <link
+        rel="icon"
+        type="image/svg+xml"
+        href="./img/logo_web_2.png"
+    >
+</head>
+
+
+<body>
+
+    <div class="admin-layout">
+
+        <!-- MENÚ LATERAL -->
+        <aside class="sidebar">
+
+            <!-- Logo -->
+
+            <div class="sidebar-logo">
+                <a href="admin-home.html">
+                    <img
+                        src="./img/Logo_pasteleria_mil_sabores.png"
+                        alt="Pastelería Mil Sabores"
+                    >
+                </a>
+                <h1>Administración</h1>
+            </div>
+
+
+            <!-- Navegación -->
+            <nav class="admin-nav">
+
+                <p class="nav-titulo">
+                    PRINCIPAL
+                </p>
+
+                <a href="admin-home.html" class="nav-item">
+                    <span>Dashboard</span>
+                </a>
+                
+                <a href="admin-productos.html" class="nav-item">
+                    <span>Productos</span>
+                </a>
+
+                <a href="admin-reportes.html" class="nav-item">
+                    <span>Reportes</span>
+                </a>
+
+                <a href="admin-usuarios.html" class="nav-item activo">
+                    <span>Usuarios</span>
+                </a>
+
+            </nav>
+
+
+            <!-- Perfil -->
+
+            <div class="sidebar-perfil">
+
+                <a href="admin-home.html" class="perfil-link">
+                    <div class="perfil-info">
+                        <strong>Administrador</strong>
+                    </div>
+                </a>
+
+                <a
+                    href="login.html"
+                    class="cerrar-sesion"
+                >
+                    Cerrar sesión
+                </a>
+            </div>
+        </aside>
+
+        <!-- CONTENIDO -->
+        <main class="admin-main">
+
+            <header class="admin-header">
+                <div class="bienvenida">
+                    <span>Administración</span>
+                    <h2>
+                        Usuarios
+                    </h2>
+                </div>
+            </header>
+
+            <section class="admin-pagina">
+                <div class="pagina-header">
+                    <div>
+                        <h3>
+                            Usuarios registrados
+                        </h3>
+                        <p>
+                            Administración de los usuarios registrados en la plataforma.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="estado-vacio">
+                    <p>
+                        Actualmente no existen usuarios registrados en el sistema.
+                    </p>
+                </div>
+            </section>
+
+        </main>
+    </div>
+</body>
+
+</html>
