@@ -125,6 +125,7 @@ nav a:hover {
     border: 1px solid var(--color-texto-sec);
     padding: 15px;
     text-align: center;
+    border: 1px solid #FFC0CB;
     flex: 1;
     border-radius: 8px;
 }
@@ -484,6 +485,7 @@ footer {
     border-radius: 5px;
     overflow: hidden;
     text-align: center;
+    border: 1px solid #FFC0CB;
     padding-bottom: 15px;
     transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -956,4 +958,97 @@ footer {
         flex-direction: column;
         text-align: center;
     }
+}
+
+/* ========== VISTA LOGIN Y ACCESOS ========== */
+
+.btn-login {
+    background-color: var(--color-chocolate, #8B4513);
+    color: #ffffff !important;
+    padding: 6px 14px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: opacity 0.3s ease;
+}
+
+.btn-login:hover {
+    background-color: var(--color-chocolate, #8B4513);
+    opacity: 0.9;
+}
+
+.btn-registro {
+    background-color: var(--color-rosa, #FFC0CB);
+    color: var(--color-texto-principal, #5D4037) !important;
+    padding: 6px 14px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: opacity 0.3s ease;
+}
+
+.btn-registro:hover {
+    background-color: var(--color-rosa, #FFC0CB);
+    opacity: 0.9;
+}
+
+.card-login {
+    border: 1px solid var(--color-rosa, #FFC0CB) !important;
+    border-top: 5px solid var(--color-chocolate, #8B4513) !important;
+    background-color: #ffffff;
+}
+
+.titulo-login {
+    color: var(--color-chocolate, #8B4513);
+    font-weight: bold;
+}
+
+.form-control-pasteleria:focus {
+    border-color: var(--color-rosa, #FFC0CB);
+    box-shadow: 0 0 0 0.25rem rgba(255, 192, 203, 0.5);
+}
+
+.check-pasteleria:checked {
+    background-color: var(--color-chocolate, #8B4513);
+    border-color: var(--color-chocolate, #8B4513);
+}
+
+.enlace-olvido {
+    color: var(--color-chocolate, #8B4513);
+}
+
+.enlace-olvido:hover {
+    color: var(--color-chocolate, #8B4513);
+    text-decoration: underline !important;
+}
+
+.btn-login-submit {
+    background-color: var(--color-rosa, #FFC0CB);
+    color: var(--color-texto-principal, #5D4037);
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.btn-login-submit:hover {
+    background-color: var(--color-rosa, #FFC0CB);
+    color: var(--color-texto-principal, #5D4037);
+    opacity: 0.85;
+}
+
+.btn-registro-link {
+    color: var(--color-chocolate, #8B4513);
+    text-decoration: none;
+}
+
+.btn-registro-link:hover {
+    color: var(--color-chocolate, #8B4513);
+    text-decoration: underline !important;
+}
+
+.img-login-arriba {
+    width: 90px;         /* Ajusta el ancho según tus gustos */
+    height: auto;        /* Mantiene la proporción de la imagen */
+    object-fit: contain;
 }
