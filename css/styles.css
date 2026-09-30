@@ -125,6 +125,7 @@ nav a:hover {
     border: 1px solid var(--color-texto-sec);
     padding: 15px;
     text-align: center;
+    border: 1px solid #FFC0CB;
     flex: 1;
     border-radius: 8px;
 }
@@ -484,6 +485,7 @@ footer {
     border-radius: 5px;
     overflow: hidden;
     text-align: center;
+    border: 1px solid #FFC0CB;
     padding-bottom: 15px;
     transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -1017,4 +1019,233 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 20px;
+/* ========== PÁGINA NOSOTROS ========== */
+
+.nosotros-hero {
+    text-align: center;
+    padding: 50px 20px 30px;
+    background-color: var(--color-rosa);
+    margin-bottom: 40px;
+}
+
+.nosotros-hero h1 {
+    font-size: 2.8em;
+    margin-bottom: 10px;
+}
+
+.nosotros-hero p {
+    font-size: 1.1em;
+    color: var(--color-texto-principal);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contenedor-nosotros {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px 50px;
+}
+
+/* MISIÓN Y VISIÓN */
+.mision-vision-grid {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.card-mision-vision {
+    flex: 1;
+    min-width: 280px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid var(--color-rosa);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.card-mision-vision h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.card-mision-vision p {
+    line-height: 1.7;
+    color: var(--color-texto-principal);
+}
+
+/* RECUADRO GUINNESS */
+.recuadro-guinness {
+    background-color: #ffffff;
+    border: 3px dashed var(--color-chocolate);
+    border-radius: 12px;
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 60px;
+    box-shadow: 0 6px 15px rgba(139, 69, 19, 0.1);
+}
+
+.guinness-icono {
+    font-size: 4em;
+    line-height: 1;
+}
+
+.guinness-texto h3 {
+    font-size: 1.8em;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.guinness-texto p {
+    line-height: 1.6;
+    margin: 0;
+    font-size: 1.05em;
+}
+
+/* GALERÍA DE FOTOS */
+.galeria-nosotros {
+    text-align: center;
+}
+
+.subtitulo-galeria {
+    color: var(--color-texto-principal);
+    margin-bottom: 30px;
+}
+
+.grid-fotos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+}
+
+.foto-item {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.foto-item:hover {
+    transform: translateY(-5px);
+}
+
+.foto-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.foto-item span {
+    display: block;
+    padding: 12px;
+    font-weight: bold;
+    font-size: 0.9em;
+    color: var(--color-chocolate);
+    background-color: #ffffff;
+}
+
+/* RESPONSIVE NOSOTROS */
+@media (max-width: 768px) {
+    .recuadro-guinness {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* ========== VISTA LOGIN Y ACCESOS ========== */
+
+.btn-login {
+    background-color: var(--color-chocolate, #8B4513);
+    color: #ffffff !important;
+    padding: 6px 14px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: opacity 0.3s ease;
+}
+
+.btn-login:hover {
+    background-color: var(--color-chocolate, #8B4513);
+    opacity: 0.9;
+}
+
+.btn-registro {
+    background-color: var(--color-rosa, #FFC0CB);
+    color: var(--color-texto-principal, #5D4037) !important;
+    padding: 6px 14px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: opacity 0.3s ease;
+}
+
+.btn-registro:hover {
+    background-color: var(--color-rosa, #FFC0CB);
+    opacity: 0.9;
+}
+
+.card-login {
+    border: 1px solid var(--color-rosa, #FFC0CB) !important;
+    border-top: 5px solid var(--color-chocolate, #8B4513) !important;
+    background-color: #ffffff;
+}
+
+.titulo-login {
+    color: var(--color-chocolate, #8B4513);
+    font-weight: bold;
+}
+
+.form-control-pasteleria:focus {
+    border-color: var(--color-rosa, #FFC0CB);
+    box-shadow: 0 0 0 0.25rem rgba(255, 192, 203, 0.5);
+}
+
+.check-pasteleria:checked {
+    background-color: var(--color-chocolate, #8B4513);
+    border-color: var(--color-chocolate, #8B4513);
+}
+
+.enlace-olvido {
+    color: var(--color-chocolate, #8B4513);
+}
+
+.enlace-olvido:hover {
+    color: var(--color-chocolate, #8B4513);
+    text-decoration: underline !important;
+}
+
+.btn-login-submit {
+    background-color: var(--color-rosa, #FFC0CB);
+    color: var(--color-texto-principal, #5D4037);
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.btn-login-submit:hover {
+    background-color: var(--color-rosa, #FFC0CB);
+    color: var(--color-texto-principal, #5D4037);
+    opacity: 0.85;
+}
+
+.btn-registro-link {
+    color: var(--color-chocolate, #8B4513);
+    text-decoration: none;
+}
+
+.btn-registro-link:hover {
+    color: var(--color-chocolate, #8B4513);
+    text-decoration: underline !important;
+}
+
+.img-login-arriba {
+    width: 90px;         /* Ajusta el ancho según tus gustos */
+    height: auto;        /* Mantiene la proporción de la imagen */
+    object-fit: contain;
 }
