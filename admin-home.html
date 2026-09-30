@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastelería Mil Sabores - Administración</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles_admin.css">
+    <link rel="icon" type="image/svg+xml" href="./img/logo_web_2.png">
+</head>
+
+<body>
+
+    <div class="admin-layout">
+
+
+        <!-- MENÚ LATERAL -->
+
+        <aside class="sidebar">
+
+
+            <!-- Logo -->
+
+            <div class="sidebar-logo">
+                <a href="admin-home.html">
+                    <img
+                        src="./img/Logo_pasteleria_mil_sabores.png"
+                        alt="Pastelería Mil Sabores"
+                    >
+                </a>
+                <h1>Administración</h1>
+            </div>
+
+
+            <!-- NAVEGACIÓN PRINCIPAL -->
+
+            <nav class="admin-nav">
+
+                <p class="nav-titulo">
+                    PRINCIPAL
+                </p>
+
+                <a href="admin-home.html" class="nav-item activo">
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="admin-productos.html" class="nav-item">
+                    <span>Productos</span>
+                </a>
+
+                <a href="admin-reportes.html" class="nav-item">
+                    <span>Reportes</span>
+                </a>
+
+                <a href="admin-usuarios.html" class="nav-item">
+                    <span>Usuarios</span>
+                </a>
+
+            </nav>
+
+
+            <!-- PERFIL -->
+
+            <div class="sidebar-perfil">
+                <a href="admin-home.html" class="perfil-link">
+                    <div class="perfil-info">
+                        <strong>Administrador</strong>
+                    </div>
+                </a>
+
+                <!-- Cerrar sesión -->
+                <a
+                    href="login.html"
+                    class="cerrar-sesion"
+                >
+                    Cerrar sesión
+                </a>
+
+            </div>
+        </aside>
+
+        <!-- ÁREA PRINCIPAL -->
+
+        <main class="admin-main">
+
+            <!-- HEADER DEL DASHBOARD -->
+
+            <header class="admin-header">
+
+                <div class="bienvenida">
+                    <span>Panel administrativo</span>
+                    <h2>
+
+                        ¡Hola Administrador!
+                    </h2>
+                </div>
+
+            </header>
+
+
+            <!--  CONTENIDO DEL DASHBOARD -->
+
+            <section class="dashboard-contenido">
+
+
+                <!-- TARJETAS DE RESUMEN-->
+
+                <div class="dashboard-resumen">
+
+                    <article class="resumen-card">
+                        <div>
+                            <span>Pedidos</span>
+                            <strong>--</strong>
+                        </div>
+                    </article>
+
+
+                    <article class="resumen-card">
+                        <div>
+                            <span>Productos</span>
+                            <strong>--</strong>
+                        </div>
+                    </article>
+
+
+                    <article class="resumen-card">
+                        <div>
+                            <span>Clientes</span>
+                            <strong>--</strong>
+                        </div>
+                    </article>
+
+
+                    <article class="resumen-card">
+                        <div>
+                            <span>Ventas</span>
+                            <strong>--</strong>
+                        </div>
+                    </article>
+
+                </div>
+
+                <!-- ÁREA SUPERIOR -->
+
+                <div class="dashboard-seccion">
+
+                    <div class="seccion-header">
+
+                        <h3>Resumen del sistema</h3>
+
+                    </div>
+
+                    <div class="contenido-vacio">
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- DIVISIÓN CENTRAL -->
+
+                <div class="division-dashboard"></div>
+
+
+
+                <!-- ÁREA INFERIOR -->
+
+                <div class="dashboard-seccion inferior">
+
+                    <div class="seccion-header">
+
+                        <h3>Actividad reciente</h3>
+
+                    </div>
+                    <div class="contenido-vacio">
+                    </div>
+
+                </div>
+
+
+            </section>
+
+
+        </main>
+
+    </div>
+
+
+</body>
+
+</html>
