@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastelería Mil Sabores - Inicio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="icon" type="image/svg+xml" href="./img/logo_web_2.png">
+</head>
+<body>
+        <header>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="productos.html">Productos</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="blogs.html">Blogs</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+        <div class="logo">
+        <a href="index.html">
+        <img src="./img/Logo_pasteleria_mil_sabores.png" class="logo-img" >
+        </a>
+        <h1></h1>
+        </div>
+        <div class="carrito-acceso">
+            <a href="carrito.html">🛒 Carrito (0)</a>
+            <a href="login.html" class="btn-login">Iniciar sesión</a>
+            <a href="registro.html" class="btn-registro">Registrar usuario</a>
+        </div>
+    </header>
+<main class="carrito-main">
+        <div class="titulo-pagina">
+            <h1>Carrito de Compras</h1>
+        </div>
+        <div class="contenedor-carrito">
+            <div class="lista-productos">
+
+                <div class="tarjeta-producto">
+                    <div class="wireframe-img"></div>
+                    <div class="info-producto">
+                        <h3>Producto #1</h3>
+                        <p>Delicioso pastel con relleno especial e ingredientes seleccionados.</p>
+                    </div>
+                    <div class="precio-cantidad">
+                        <span class="precio">$ 8.000</span>
+                        <div class="control-cantidad">
+                            <button type="button" class="btn-cant">-</button>
+                            <input type="text" value="1" readonly>
+                            <button type="button" class="btn-cant">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-resumen">
+                <div class="fila-total">
+                    <span>TOTAL:</span>
+                    <strong class="monto-total">$ 8.000</strong>
+                </div>
+                <div class="cupon-seccion">
+                    <label for="cupon">Ingrese el cupón de descuento</label>
+                    <div class="cupon-box">
+                        <input type="text" id="cupon" placeholder="Código">
+                        <button type="button" class="btn-aplicar">APLICAR</button>
+                    </div>
+                </div>
+                <button type="button" class="btn-pagar">PAGAR</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2026 Pastelería Mil Sabores. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
