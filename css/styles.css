@@ -1,6 +1,13 @@
 /* ============ PAGINA PRINCIPAL ================= */
 
 /* Variables de colores basados en el caso oficial */
+
+html {
+  overflow-y: scroll;
+  scrollbar-gutter: stable;
+}
+
+
 :root {
     --color-fondo: #FFF5E1; /* Crema Pastel */
     --color-rosa: #FFC0CB;  /* Rosa Suave */
@@ -407,12 +414,11 @@ footer {
     text-align: center;
     line-height: 1;
 }
-.informacion-contacto{
-    margin-left: 15%;
-    margin-bottom: 20px;
-    text-align: left;
-    flex-direction:column;
-    line-height: 0.9;
+
+.informacion-contacto {
+    max-width: 500px;
+    margin: 0 auto 30px auto;
+    text-align: center;
 }
 
 /* ==========   PÁGINA DE PRODUCTOS   ========== */
@@ -671,7 +677,7 @@ footer {
     border-radius: 8px;
 
     overflow: hidden;
-
+    border: 1px solid #FFC0CB;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -859,7 +865,7 @@ footer {
 
 .card-mision-vision {
     flex: 1;
-    min-width: 280px;
+    min-width: flex;
     background-color: #ffffff;
     padding: 30px;
     border-radius: 8px;
