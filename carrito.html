@@ -33,20 +33,44 @@
             <a href="registro.html" class="btn-registro">Registrar usuario</a>
         </div>
     </header>
-    <main>
-        <div class="titulo-contacto">
+<main class="carrito-main">
+        <div class="titulo-pagina">
             <h1>Carrito de Compras</h1>
         </div>
-        <section class="carrito-grid">
-            <div class="carrito-contenido">
-                <div class="carrito-columna">
+        <div class="contenedor-carrito">
+            <div class="lista-productos">
 
+                <div class="tarjeta-producto">
+                    <div class="wireframe-img"></div>
+                    <div class="info-producto">
+                        <h3>Producto #1</h3>
+                        <p>Delicioso pastel con relleno especial e ingredientes seleccionados.</p>
+                    </div>
+                    <div class="precio-cantidad">
+                        <span class="precio">$ 8.000</span>
+                        <div class="control-cantidad">
+                            <button type="button" class="btn-cant">-</button>
+                            <input type="text" value="1" readonly>
+                            <button type="button" class="btn-cant">+</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-
-
-        </section>
+            <div class="panel-resumen">
+                <div class="fila-total">
+                    <span>TOTAL:</span>
+                    <strong class="monto-total">$ 8.000</strong>
+                </div>
+                <div class="cupon-seccion">
+                    <label for="cupon">Ingrese el cupón de descuento</label>
+                    <div class="cupon-box">
+                        <input type="text" id="cupon" placeholder="Código">
+                        <button type="button" class="btn-aplicar">APLICAR</button>
+                    </div>
+                </div>
+                <button type="button" class="btn-pagar">PAGAR</button>
+            </div>
+        </div>
     </main>
     <footer>
         <p>&copy; 2026 Pastelería Mil Sabores. Todos los derechos reservados.</p>
