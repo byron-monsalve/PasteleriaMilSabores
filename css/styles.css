@@ -1008,17 +1008,6 @@ footer {
     box-shadow: 0 2px 0 var(--color-texto-principal);
 }
 
-/*====Registro====*/
-.registro-cuerpo {
-    background: #ffffff;
-    border: 1px solid var(--color-rosa);
-    border-radius: 12px;
-    padding: 10px;
-    margin:0 15% 10%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
 /* ========== PÁGINA NOSOTROS ========== */
 
 .nosotros-hero {
@@ -1248,4 +1237,137 @@ footer {
     width: 90px;         /* Ajusta el ancho según tus gustos */
     height: auto;        /* Mantiene la proporción de la imagen */
     object-fit: contain;
+}
+
+/* ====REGISTRO====*/
+
+.registro-main {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 20px 60px 20px;
+}
+
+.titulo-pagina {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.titulo-pagina h1 {
+    color: #6d3209;
+    font-size: 2.2rem;
+    margin: 0 0 5px 0;
+}
+
+.subtitulo {
+    color: #6d3209;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.contenedor-registro {
+    background: #ffffff;
+    border: 1px solid var(--color-rosa);
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+    justify-content: center;
+}
+
+
+.form-grupo {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    gap: 5px;
+}
+.form-grupo label {
+    width: 180px;
+    font-weight: bold;
+    color: #6d3209;
+    padding-top: 8px;
+    flex-shrink: 0;
+}
+.input-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.input-container input,
+.input-container select {
+    width: 80%;
+    padding: 10px 12px;
+    border: 1px solid var(--color-rosa);
+    border-radius: 6px;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input-container input:focus,
+.input-container select:focus {
+    border-color: #6d3209;
+    box-shadow: 0 0 0 2px rgba(109, 50, 9, 0.1);
+}
+
+.input-container input.input-error,
+.input-container select.input-error {
+    border-color: #d9534f !important;
+    background-color: #fff8f8;
+}
+
+.error-msg {
+    color: #d9534f;
+    font-size: 0.82rem;
+    margin-top: 4px;
+    min-height: 18px;
+}
+
+.form-fila-ubicacion {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.form-subgrupo {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.form-subgrupo label {
+    font-weight: bold;
+    color: #6d3209;
+    flex-shrink: 0;
+    width: auto;
+}
+
+.form-acciones {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.btn-registro-submit {
+    background-color: var(--color-rosa); 
+    color: var(--color-chocolate);         
+    border: none;
+    padding: 12px 45px;
+    font-size: 1.05rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.btn-registro-submit:hover {
+    background-color: #522405;
+    color:white;
+}
+
+.btn-registro-submit:active {
+    transform: scale(0.98);
 }
